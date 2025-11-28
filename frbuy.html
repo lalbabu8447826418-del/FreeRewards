@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FR Buy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, red, orange);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff0;
+      animation: glowTitle 1.5s infinite alternate;
+    }
+
+    @keyframes glowTitle {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff0; }
+      to { text-shadow: 0 0 20px #ff0, 0 0 40px #fff; }
+    }
+
+    form {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      display: inline-block;
+      text-align: left;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 20px #000;
+      animation: glowForm 2s infinite alternate;
+    }
+
+    @keyframes glowForm {
+      from { box-shadow: 0 0 20px #000; }
+      to { box-shadow: 0 0 30px #00f8, 0 0 40px #0ff8; }
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus, select:focus, textarea:focus {
+      box-shadow: 0 0 10px #00f, 0 0 20px #0ff;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #007bff, 0 0 20px #00f;
+      transition: 0.3s;
+      animation: glowButton 1.5s infinite alternate;
+    }
+
+    @keyframes glowButton {
+      from { box-shadow: 0 0 10px #007bff, 0 0 20px #00f; }
+      to { box-shadow: 0 0 20px #0ff, 0 0 30px #007bff; }
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    select option {
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>FR Buy</h1>
+
+  <form action="mailto:lalbabu8447826418@gmail.com" method="post" enctype="text/plain">
+    <label for="discord">Enter your Discord ID:</label>
+    <input type="text" id="discord" name="discord" placeholder="Type your Discord ID">
+
+    <label for="gmail">Enter your Gmail:</label>
+    <input type="text" id="gmail" name="gmail" placeholder="Type your Gmail">
+
+    <label for="plan">Select plans you want to buy:</label>
+    <select id="plan" name="plan">
+      <option value="1.5m Owo">1.5 m Owo = MCFA (perm)</option>
+      <option value="2.5m Owo">2.5 m Owo = MCFA (own pass + perm)</option>
+      <option value="4m Owo">4 m Owo = MCFA (perm + own pass + gmail)</option>
+      <option value="100k Owo">100k Owo = 50 Crunchy roll accounts</option>
+      <option value="500k Owo">500k Owo = 300 Crunchy roll accounts</option>
+      <option value="1m Owo">1m Owo = 2 days mc gen access</option>
+      <option value="2m Owo">2 m Owo = 5 days mc gen access</option>
+      <option value="5m Owo">5 m Owo = 15 days mc gen access</option>
+      <option value="99 rupees">99 rupees = MCFA (perm)</option>
+      <option value="199 rupees">199 rupees = MCFA (perm + own pass)</option>
+      <option value="299 rupees">299 rupees = MCFA (perm + own pass + gmail)</option>
+      <option value="19 rupees">19 rupees = 20 crunchy roll accounts</option>
+      <option value="49 rupees">49 rupees = 65 crunchy roll accounts</option>
+      <option value="99 rupees 10days">99 rupees = 10 days mc gen access</option>
+      <option value="199 rupees 27days">199 rupees = 27 days mc gen access</option>
+      <option value="weekly">Weekly subscription</option>
+      <option value="monthly">Monthly subscription</option>
+      <option value="yearly">Yearly subscription</option>
+    </select>
+
+    <label for="questions">Have any questions?</label>
+    <textarea id="questions" name="questions" placeholder="Type your questions here"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+  </html>
