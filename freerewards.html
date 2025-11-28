@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FR Rewards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, red, orange);
+      color: #fff;
+      text-align: center;
+    }
+
+    .top-box {
+      width: 100%;
+      padding: 25px 0;
+      background: linear-gradient(90deg, #000, #00264d);
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 0 20px #001a33;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+    }
+
+    .top-box::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 30px 5px #00f, 0 0 60px 10px #0ff;
+      opacity: 0.5;
+      border-radius: 0 0 15px 15px;
+      z-index: -1;
+    }
+
+    .welcome-text {
+      font-size: 26px;
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff4500; }
+      to { text-shadow: 0 0 20px #ff7f50; }
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .about-box, .store-box, .coins-box, .support-box {
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 25px;
+      padding: 25px;
+      margin: 25px auto;
+      width: 92%;
+      max-width: 480px;
+      color: #fff;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px #0008;
+      border: 1px solid rgba(255,255,255,0.1);
+      transform: translateY(0);
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    .about-box:hover, .store-box:hover, .coins-box:hover, .support-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px #00f8, 0 0 40px #0ff8;
+    }
+
+    .about-box h2, .store-box h2, .coins-box h2, .support-box h2 {
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .about-box p, .store-box p, .coins-box p, .support-box p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .join-btn, .store-btn, .coins-btn, .support-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #007bff, 0 0 20px #00f;
+      transition: 0.3s;
+    }
+
+    .join-btn:hover, .store-btn:hover, .coins-btn:hover, .support-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #007bff, 0 0 30px #0ff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="top-box">
+    🎁 <span>Free Rewards</span>
+  </div>
+
+  <div class="welcome-text">Welcome to Free Rewards 🔥</div>
+
+  <div class="container">
+    <div class="about-box">
+      <h2>About:</h2>
+      <p>A community of Discord can get free rewards by inviting on Discord server and doing tasks.</p>
+      <a class="join-btn" href="https://discord.gg/freerewards">Join Discord</a>
+    </div>
+
+    <div class="store-box">
+      <h2>FR STORE</h2>
+      <p>Can buy accounts, gen access of FR, etc. on FR STORE.</p>
+      <a class="store-btn" href="frstore.html">Store</a>
+    </div>
+
+    <div class="coins-box">
+      <h2>FR COINS</h2>
+      <p>Earn coins by completing tasks and get coins. Can convert FR coins to rewards.</p>
+      <a class="coins-btn" href="frcoins.html">Here</a>
+    </div>
+
+    <div class="support-box">
+      <h2>FR SUPPORT</h2>
+      <p>Have any questions? You can ask any questions.</p>
+      <a class="support-btn" href="frsupport.html">Support</a>
+    </div>
+
+  </div>
+</body>
+</html>
