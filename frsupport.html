@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FR Support</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, red, orange);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 40px #00f, 0 0 60px #0ff;
+    animation: glowTitle 1.5s infinite alternate;
+    margin-bottom: 30px;
+  }
+
+  @keyframes glowTitle {
+    from { text-shadow: 0 0 20px #fff, 0 0 40px #00f, 0 0 60px #0ff; }
+    to { text-shadow: 0 0 40px #fff, 0 0 60px #00f, 0 0 80px #0ff; }
+  }
+
+  .support-container {
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 20px #0008, 0 0 30px #00f, 0 0 40px #0ff;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: vertical;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #00f;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #007bff, 0 0 30px #0ff;
+  }
+</style>
+</head>
+<body>
+<h1>FR Support</h1>
+<div class="support-container">
+  <form action="mailto:lalbabu8447826418@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Your Discord ID:</label>
+    <input type="text" id="name" name="name" placeholder="Type your name">
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Type your email">
+
+    <label for="issue">Describe Your Issue:</label>
+    <textarea id="issue" name="issue" placeholder="Write your problem here..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
